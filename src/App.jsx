@@ -11,23 +11,23 @@ import CardEquipo from "./components/CardEquipo";
 function App() {
   const catalogoInicial = new Catalogo();
 
-  // catalogoInicial.agregarEquipo(
-  //     new EquipoBoxeo(
-  //         "Everlast",
-  //         "Guantes",
-  //         "Rojo",
-  //         12
-  //     )
-  // );
+  catalogoInicial.agregarEquipo(
+      new EquipoBoxeo(
+          "Everlast",
+          "Guantes",
+          "Rojo",
+          12
+      )
+  );
 
-  // catalogoInicial.agregarEquipo(
-  //     new EquipoBoxeo(
-  //         "Adidas",
-  //         "Casco",
-  //         "Negro",
-  //         14
-  //     )
-  // );
+  catalogoInicial.agregarEquipo(
+      new EquipoBoxeo(
+          "Adidas",
+          "Casco",
+          "Negro",
+          14
+      )
+  );
 
   const [equipos, setEquipos] = useState(catalogoInicial.obtenerEquipos());
 
