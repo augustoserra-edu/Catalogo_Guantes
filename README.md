@@ -83,10 +83,17 @@ Para hacer los Test utilizamos el "console.assert" en el cual devuelve un true o
 
 
 Aprobada: EquipoBoxeo guarda la marca como string
+
 Aprobada: EquipoBoxeo guarda el tipo como string
+
 Aprobada: EquipoBoxeo guarda el color como string
+
 Aprobada: EquipoBoxeo guarda las onzas como numero entero
+
 Aprobada: Catalogo inicia sin equipos
+
 Aprobada: Catalogo agrega un equipo
+
 Aprobada: Catalogo devuelve el equipo agregado
+
 Fin de pruebas
