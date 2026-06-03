@@ -10,34 +10,40 @@ const mostrarResultado = (nombrePrueba, condicion) => {
 };
 
 const probarEquipoBoxeo = () => {
-  const equipo = new EquipoBoxeo("Everlast", "Guantes", "Rojo", 12);
+  const guantes = new EquipoBoxeo("Everlast", "Guantes", "Rojo", "", 12);
+  const casco = new EquipoBoxeo("Adidas", "Casco", "Negro", "", "", "L");
 
 
   mostrarResultado(
     "EquipoBoxeo guarda la marca como string",
-    typeof equipo.marca === "string"
+    typeof guantes.marca === "string"
   );
  
   mostrarResultado(
     "EquipoBoxeo guarda el tipo como string",
-    typeof equipo.tipo === "string"
+    typeof guantes.tipo === "string"
   );
 
   mostrarResultado(
     "EquipoBoxeo guarda el color como string",
-    typeof equipo.color === "string"
+    typeof guantes.color === "string"
   );
 
   mostrarResultado(
     "EquipoBoxeo guarda las onzas como numero entero",
-    Number.isInteger(equipo.onzas)
+    Number.isInteger(guantes.onzas)
+  );
+
+  mostrarResultado(
+    "EquipoBoxeo guarda el talle como string",
+    typeof casco.talle === "string"
   );
 
 };
 
 const probarCatalogo = () => {
   const catalogo = new Catalogo();
-  const equipo = new EquipoBoxeo("Adidas", "Casco", "Negro", 14);
+  const equipo = new EquipoBoxeo("Adidas", "Casco", "Negro", "", "", "L");
 
   mostrarResultado(
     "Catalogo inicia sin equipos",

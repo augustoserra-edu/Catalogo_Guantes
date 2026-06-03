@@ -15,7 +15,9 @@ El sistema permite visualizar equipos de boxeo en formato de tarjetas y agregar 
 - Marca.
 - Tipo.
 - Color.
-- Onzas.
+- Imagen.
+- Onzas, para guantes.
+- Talle, para cascos.
 
 Actualmente, los datos se manejan en memoria durante la ejecucion de la aplicacion. Al recargar la pagina, se vuelve al catalogo inicial definido en el codigo.
 
@@ -36,6 +38,8 @@ classDiagram
         -tipo
         -color
         -onzas
+        -talle
+        -imagen
         +manejarSubmit(evento)
     }
 
@@ -54,7 +58,9 @@ classDiagram
         +marca
         +tipo
         +color
+        +imagen
         +onzas
+        +talle
         +mostrarInfo()
     }
 
@@ -70,17 +76,17 @@ classDiagram
 ## Descripcion de clases y componentes
 
 - `App`: componente principal de la aplicacion. Crea el catalogo inicial, administra el estado de los equipos y renderiza el formulario junto con las tarjetas.
-- `Formulario`: componente encargado de capturar los datos ingresados por el usuario para crear un nuevo equipo.
+- `Formulario`: componente encargado de iniciar la carga de un nuevo producto, permitir la seleccion entre guante o casco y mostrar los campos correspondientes.
 - `CardEquipo`: componente encargado de mostrar la informacion de cada equipo en una tarjeta.
 - `Catalogo`: clase que administra una coleccion de equipos.
-- `EquipoBoxeo`: clase que representa un producto del catalogo con marca, tipo, color y onzas.
+- `EquipoBoxeo`: clase que representa un producto del catalogo con marca, tipo, color, imagen y un atributo especifico segun el tipo de producto.
 
 ## Flujo principal de la aplicacion
 
 1. `App` crea una instancia de `Catalogo`.
 2. `Catalogo` recibe objetos de tipo `EquipoBoxeo` como datos iniciales.
 3. `App` guarda los equipos en el estado `equipos`.
-4. `Formulario` permite ingresar los datos de un nuevo equipo.
+4. `Formulario` permite elegir si se desea cargar un guante o un casco.
 5. `App` crea un nuevo objeto `EquipoBoxeo` con los datos recibidos.
 6. `CardEquipo` muestra cada equipo disponible en el catalogo.
 
@@ -90,7 +96,7 @@ classDiagram
 - El sistema debe mostrar un catalogo inicial de equipos de boxeo.
 - El usuario debe poder agregar nuevos equipos al catalogo.
 - El sistema debe mostrar cada equipo en una tarjeta individual.
-- Cada tarjeta debe mostrar la marca, el tipo, el color y las onzas del equipo.
+- Cada tarjeta debe mostrar la marca, el tipo, el color, la imagen y el atributo correspondiente: onzas para guantes o talle para cascos.
 - El formulario debe validar que los campos requeridos esten completos antes de agregar un equipo.
 
 ## Requerimientos no funcionales
@@ -172,6 +178,8 @@ Aprobada: EquipoBoxeo guarda el tipo como string
 Aprobada: EquipoBoxeo guarda el color como string
 
 Aprobada: EquipoBoxeo guarda las onzas como numero entero
+
+Aprobada: EquipoBoxeo guarda el talle como string
 
 Aprobada: Catalogo inicia sin equipos
 

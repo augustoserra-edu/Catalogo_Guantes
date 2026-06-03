@@ -16,6 +16,7 @@ function App() {
           "Everlast",
           "Guantes",
           "Rojo",
+          "/imagenes/GuantesRojos.png",
           12
       )
   );
@@ -25,7 +26,9 @@ function App() {
           "Adidas",
           "Casco",
           "Negro",
-          14
+          "/imagenes/Casco.png",
+          "",
+          "L"
       )
   );
 
@@ -36,7 +39,9 @@ function App() {
       datos.marca,
       datos.tipo,
       datos.color,
+      datos.imagen,
       datos.onzas,
+      datos.talle,
     );
 
     setEquipos([...equipos, nuevoEquipo]);

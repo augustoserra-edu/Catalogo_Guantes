@@ -4,6 +4,12 @@ function CardEquipo({ equipo }) {
 
         <div className="card">
 
+            <img
+                className="card-imagen"
+                src={equipo.imagen}
+                alt={`${equipo.tipo} ${equipo.marca}`}
+            />
+
             <h2>{equipo.tipo}</h2>
 
             <p>
@@ -14,9 +20,21 @@ function CardEquipo({ equipo }) {
                 <strong>Color:</strong> {equipo.color}
             </p>
 
-            <p>
-                <strong>Onzas:</strong> {equipo.onzas} oz
-            </p>
+            {equipo.tipo === "Guantes" && (
+
+                <p>
+                    <strong>Onzas:</strong> {equipo.onzas} oz
+                </p>
+
+            )}
+
+            {equipo.tipo === "Casco" && (
+
+                <p>
+                    <strong>Talle:</strong> {equipo.talle}
+                </p>
+
+            )}
 
         </div>
     );
