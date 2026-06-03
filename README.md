@@ -166,12 +166,19 @@ Las pruebas utilizan `console.assert`, que permite validar condiciones logicas. 
 
 ```text
 Aprobada: EquipoBoxeo guarda la marca como string
+
 Aprobada: EquipoBoxeo guarda el tipo como string
+
 Aprobada: EquipoBoxeo guarda el color como string
+
 Aprobada: EquipoBoxeo guarda las onzas como numero entero
+
 Aprobada: Catalogo inicia sin equipos
+
 Aprobada: Catalogo agrega un equipo
+
 Aprobada: Catalogo devuelve el equipo agregado
+
 Fin de pruebas
 ```
 
