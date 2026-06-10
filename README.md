@@ -188,7 +188,9 @@ Aprobada: Catalogo devuelve el equipo agregado
 Fin de pruebas
 
 ```
+
 ## Resultado con errores en consola
+```text
 Assertion failed: Fallo: guantes guarda la marca como string
 Assertion failed: Fallo: EquipoBoxeo guarda la ruta imagen como string
 Assertion failed: Fallo: guantes guarda el tipo como string
@@ -204,7 +206,7 @@ Aprobada: Catalogo inicia sin equipos
 Aprobada: Catalogo agrega un equipo
 Aprobada: Catalogo devuelve el equipo agregado
 Fin de pruebas
-
+```
 ## Conclusion
 
 La aplicacion cumple con el objetivo principal del proyecto: representar un catalogo de equipos de boxeo, permitir la carga de nuevos elementos y organizar la logica mediante componentes de React y clases de JavaScript. Las pruebas definidas permiten validar el comportamiento basico del sistema y documentar su correcto funcionamiento.
