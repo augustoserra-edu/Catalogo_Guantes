@@ -10,35 +10,59 @@ const mostrarResultado = (nombrePrueba, condicion) => {
 };
 
 const probarEquipoBoxeo = () => {
-  const guantes = new EquipoBoxeo("Everlast", "Guantes", "Rojo", "", 12);
-  const casco = new EquipoBoxeo("Adidas", "Casco", "Negro", "", "", "L");
+  const guantes = new EquipoBoxeo("1", "Guantes", "Rojo", "./guantes.jpg", 12);
+  const casco = new EquipoBoxeo("Adidas", "Casco", "Negro", "./casco.jpg", 12, "L");
 
 
   mostrarResultado(
-    "EquipoBoxeo guarda la marca como string",
+    "guantes guarda la marca como string",
     typeof guantes.marca === "string"
   );
  
   mostrarResultado(
-    "EquipoBoxeo guarda el tipo como string",
+    "EquipoBoxeo guarda la ruta imagen como string",
+    typeof guantes.imagen === "string"
+  );
+  mostrarResultado(
+    "guantes guarda el tipo como string",
     typeof guantes.tipo === "string"
   );
 
   mostrarResultado(
-    "EquipoBoxeo guarda el color como string",
+    "guantes guarda el color como string",
     typeof guantes.color === "string"
   );
 
   mostrarResultado(
-    "EquipoBoxeo guarda las onzas como numero entero",
+    "guantes guarda las onzas como numero entero",
     Number.isInteger(guantes.onzas)
   );
 
   mostrarResultado(
-    "EquipoBoxeo guarda el talle como string",
+    "casco guarda el talle como string",
     typeof casco.talle === "string"
   );
+  mostrarResultado(
+    "casco guarda la marca como string",
+    typeof casco.marca === "string"
+  );
+  mostrarResultado(
+    "casco guarda el tipo como string",
+    typeof casco.tipo === "string"
+  );
+  mostrarResultado(
+    "casco guarda el color como string",
+    typeof casco.color === "string"
+  );
 
+  mostrarResultado(
+    "casco guarda la ruta imagen como string",
+    typeof casco.imagen === "string"
+  );
+   mostrarResultado(
+    "casco guarda el talle imagen como string",
+    typeof casco.talle === "string"
+  );
 };
 
 const probarCatalogo = () => {

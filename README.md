@@ -171,24 +171,39 @@ Las pruebas utilizan `console.assert`, que permite validar condiciones logicas. 
 ## Resultado esperado en consola
 
 ```text
-Aprobada: EquipoBoxeo guarda la marca como string
-
-Aprobada: EquipoBoxeo guarda el tipo como string
-
-Aprobada: EquipoBoxeo guarda el color como string
-
-Aprobada: EquipoBoxeo guarda las onzas como numero entero
-
-Aprobada: EquipoBoxeo guarda el talle como string
-
+Aprobada: guantes guarda la marca como string
+Aprobada: EquipoBoxeo guarda la ruta imagen como string
+Aprobada: guantes guarda el tipo como string
+Aprobada: guantes guarda el color como string
+Aprobada: guantes guarda las onzas como numero entero
+Aprobada: casco guarda el talle como string
+Aprobada: casco guarda la marca como string
+Aprobada: casco guarda el tipo como string
+Aprobada: casco guarda el color como string
+Aprobada: casco guarda la ruta imagen como string
+Aprobada: casco guarda el talle imagen como string
 Aprobada: Catalogo inicia sin equipos
-
 Aprobada: Catalogo agrega un equipo
-
 Aprobada: Catalogo devuelve el equipo agregado
-
 Fin de pruebas
+
 ```
+## Resultado con errores en consola
+Assertion failed: Fallo: guantes guarda la marca como string
+Assertion failed: Fallo: EquipoBoxeo guarda la ruta imagen como string
+Assertion failed: Fallo: guantes guarda el tipo como string
+Assertion failed: Fallo: guantes guarda el color como string
+Assertion failed: Fallo: guantes guarda las onzas como numero entero
+Aprobada: casco guarda el talle como string
+Aprobada: casco guarda la marca como string
+Aprobada: casco guarda el tipo como string
+Aprobada: casco guarda el color como string
+Aprobada: casco guarda la ruta imagen como string
+Aprobada: casco guarda el talle imagen como string
+Aprobada: Catalogo inicia sin equipos
+Aprobada: Catalogo agrega un equipo
+Aprobada: Catalogo devuelve el equipo agregado
+Fin de pruebas
 
 ## Conclusion
 
